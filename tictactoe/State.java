@@ -38,6 +38,7 @@ public class State
         }
         return true;
     }
+
     public int getGameState() {
         return this.gameState;
     }
@@ -50,23 +51,23 @@ public class State
         return this.whoseMove;
     }
 
-    public void setWhoseMove() {
+    public void setWhoseMove(int whoseMove) {
         this.whoseMove = whoseMove;
     }
-
+    
     public String getXName() {
-        return this.xName;
+        return xName;
     }
 
-    public void setXName(){
+    public void setXName(String xName) {
         this.xName = xName;
     }
 
     public String getOName() {
-        return this.oName;
+        return oName;
     }
 
-    public void setOName(){
+    public void setOName(String oName) {
         this.oName = oName;
     }
 
@@ -77,5 +78,6 @@ public class State
     public void setBoardCell(int row, int col, int value) {
         this.board[row][col] = value;
     }
-
+    
 }
+
