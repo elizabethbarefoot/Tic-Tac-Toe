@@ -79,5 +79,12 @@ public class State
         this.board[row][col] = value;
     }
     
+    public void resetGameBoard() {
+        this.board = new int[Constants.BOARD_SIZE][Constants.BOARD_SIZE];
+        this.gameState = Constants.STANDBY;
+        this.whoseMove = Constants.X;
+        this.xName = "";
+        this.oName = "";
+    }
 }
 
